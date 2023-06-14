@@ -1,0 +1,91 @@
+.nav-bar {
+  background: #181818;
+  width: 70px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  min-height: 500px;
+}
+
+.logo {
+  display: block;
+  padding: 8px 0;
+
+  img {
+    border: 1px solid #fff;
+    border-radius: 50%;
+  }
+}
+
+img {
+  display: block;
+  margin: 8px auto;
+  width: 50px;
+  height: auto;
+
+  // &.sub-logo {
+  //   width: 50px;
+  // }
+}
+
+nav {
+  display: block;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  height: 210px;
+  margin-top: -120px;
+  width: 100%;
+
+  a {
+    font-size: 22px;
+    color: #4d4d4d;
+    display: block;
+    line-height: 51px;
+    position: relative;
+    text-decoration: none;
+
+    i {
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:hover {
+      color: #ffd700;
+    }
+  }
+
+  a.active {
+    color: #ffd700;
+  }
+}
+
+ul {
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  display: block;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  margin: 0;
+
+  li {
+    a {
+      padding: 7px 0;
+      display: block;
+      font-size: 25px;
+      line-height: 16px;
+
+      &:hover.linkedin svg {
+        color: #0077b5;
+      }
+      &:hover.github svg {
+        color: #6e5494;
+      }
+      &:hover.instagram svg {
+        color: #e4405f;
+      }
+    }
+  }
+}
